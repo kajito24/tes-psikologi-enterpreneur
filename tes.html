@@ -7,15 +7,15 @@
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
     <script src="https://cdn.tailwindcss.com"></script>
     </head>
-<body class="backdrop-blur-sm bg-cover bg-fixed bg-center" style="background-image: url(2.png)">
-    <div class="max-w-lg text-center md:max-w-2xl lg:max-w-4xl mx-auto mt-10 bg-gray-800 p-6 rounded-[40px] shadow-lg">
-        <h1 class="text-5xl font-bold mb-4 text-center mt-10 text-gray-50">TEST JIWA ENTERPRENEUR</h1>
-        <h1 class="mt-10 text-2xl text-gray-50">Jawab dengan jujur sesuai motivasi anda!</h1>
-        <form id="testForm" class="space-y-4">
+<body class="bg-gray-900 justify-center min-h-screen">
+    <div class="space-y-4 text-center">
+        <h1 class="text-5xl font-bold mt-10 text-gray-50">TEST JIWA ENTERPRENEUR</h1>
+        <h1 class="mt-10 text-base text-gray-50">Jawab dengan jujur sesuai motivasi anda!</h1>
+        <form id="testForm" class="space-y-4 font-sans md:text-xl text-xs">
             <!-- Pertanyaan 1 -->
-           <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-700 rounded-lg shadow-lg"> 
-            <label class="block text-left md:text-center text-2xl text-gray-200">Saya sering mencari peluang baru bahkan ketika saya sudah berada di posisi yang nyaman.</label> 
-            <select name="question2" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md">
+           <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya sering mencari peluang baru bahkan ketika saya sudah berada di posisi yang nyaman.</label> 
+            <select name="question2" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full">
                  <option value="1">Sangat tidak setuju</option> 
                  <option value="2">Tidak setuju</option> 
                  <option value="3">Netral</option> 
@@ -23,9 +23,9 @@
                   <option value="5">Sangat setuju</option> 
                 </select> 
             </div> 
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-600 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya lebih suka mengambil risiko yang telah diperhitungkan daripada mengikuti jalan yang aman.</label> 
-                <select name="question3" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md">
+           <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya lebih suka mengambil risiko yang telah diperhitungkan daripada mengikuti jalan yang aman.</label> 
+                <select name="question3" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full  ">
                      <option value="1">Sangat tidak setuju</option> 
                      <option value="2">Tidak setuju</option> 
                      <option value="3">Netral</option> 
@@ -33,9 +33,9 @@
                       <option value="5">Sangat setuju</option>
                 </select>
             </div> 
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-700 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya berani memulai sesuatu yang baru meskipun ada kemungkinan gagal.</label> 
-                <select name="question4" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+            <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya berani memulai sesuatu yang baru meskipun ada kemungkinan gagal.</label> 
+                <select name="question4" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full  "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -43,9 +43,9 @@
                     <option value="5">Sangat setuju</option> 
                 </select> 
             </div> 
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-600 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya sering menemukan cara baru untuk menyelesaikan masalah.</label> 
-                <select name="question5" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+           <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya sering menemukan cara baru untuk menyelesaikan masalah.</label> 
+                <select name="question5" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full  "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -53,9 +53,9 @@
                     <option value="5">Sangat setuju</option> 
                 </select> 
             </div> 
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-700 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya menikmati berpikir di luar kebiasaan dan mencoba hal-hal baru.</label> 
-                <select name="question6" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+            <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya menikmati berpikir di luar kebiasaan dan mencoba hal-hal baru.</label> 
+                <select name="question6" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full  "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -63,9 +63,9 @@
                     <option value="5">Sangat setuju</option> 
                 </select> 
             </div> 
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-600 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya melihat peluang di mana orang lain melihat masalah.</label> 
-                <select name="question7" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+           <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya melihat peluang di mana orang lain melihat masalah.</label> 
+                <select name="question7" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full  "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -73,9 +73,9 @@
                     <option value="5">Sangat setuju</option> 
                 </select> 
             </div> 
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-700 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya tetap berusaha meskipun menghadapi kegagalan atau rintangan besar.</label> 
-                <select name="question8" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+            <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya tetap berusaha meskipun menghadapi kegagalan atau rintangan besar.</label> 
+                <select name="question8" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full  "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -83,9 +83,9 @@
                     <option value="5">Sangat setuju</option> 
                 </select> 
             </div>
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-600 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya tidak mudah menyerah saat proyek atau usaha mengalami kesulitan.</label> 
-                <select name="question9" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+           <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya tidak mudah menyerah saat proyek atau usaha mengalami kesulitan.</label> 
+                <select name="question9" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full  "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -93,9 +93,9 @@
                     <option value="5">Sangat setuju</option> 
                 </select> 
             </div>
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-700 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya termotivasi oleh tantangan dan bersemangat untuk terus berkembang.</label> 
-                <select name="question10" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+            <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya termotivasi oleh tantangan dan bersemangat untuk terus berkembang.</label> 
+                <select name="question10" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -103,9 +103,9 @@
                     <option value="5">Sangat setuju</option> 
                 </select> 
             </div> 
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-600 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya mudah beradaptasi ketika situasi atau rencana berubah.</label> 
-                <select name="question11" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+           <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya mudah beradaptasi ketika situasi atau rencana berubah.</label> 
+                <select name="question11" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -113,9 +113,9 @@
                     <option value="5">Sangat setuju</option> 
                 </select> 
             </div> 
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-700 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya tidak takut untuk mengubah strategi jika yang sekarang tidak berhasil.</label> 
-                <select name="question12" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+            <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya tidak takut untuk mengubah strategi jika yang sekarang tidak berhasil.</label> 
+                <select name="question12" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -123,9 +123,9 @@
                     <option value="5">Sangat setuju</option> 
                 </select> 
             </div> 
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-600 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya nyaman dengan ketidakpastian dan dapat bekerja di lingkungan yang tidak stabil.</label> 
-                <select name="question13" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+           <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya nyaman dengan ketidakpastian dan dapat bekerja di lingkungan yang tidak stabil.</label> 
+                <select name="question13" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -133,9 +133,9 @@
                     <option value="5">Sangat setuju</option> 
                 </select> 
             </div> 
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-700 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya percaya diri dalam mengambil keputusan penting.</label> 
-                <select name="question14" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+            <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya percaya diri dalam mengambil keputusan penting.</label> 
+                <select name="question14" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -143,9 +143,9 @@
                     <option value="5">Sangat setuju</option> 
                 </select> 
             </div> 
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-600 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya mampu mengelola sumber daya (waktu, uang, tenaga) dengan efektif.</label> 
-                <select name="question15" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+           <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya mampu mengelola sumber daya (waktu, uang, tenaga) dengan efektif.</label> 
+                <select name="question15" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -153,9 +153,9 @@
                     <option value="5">Sangat setuju</option> 
                 </select> 
             </div> 
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-700 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya menikmati bekerja dalam tim dan mampu memotivasi orang lain untuk mencapai tujuan bersama.</label> 
-                <select name="question16" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+            <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya menikmati bekerja dalam tim dan mampu memotivasi orang lain untuk mencapai tujuan bersama.</label> 
+                <select name="question16" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -163,9 +163,9 @@
                     <option value="5">Sangat setuju</option> 
                 </select> 
             </div>
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-600 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya secara aktif membangun hubungan dengan orang-orang yang dapat membantu perkembangan bisnis atau ide saya.</label> 
-                <select name="question17" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+           <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya secara aktif membangun hubungan dengan orang-orang yang dapat membantu perkembangan bisnis atau ide saya.</label> 
+                <select name="question17" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -173,9 +173,9 @@
                     <option value="5">Sangat setuju</option> 
                 </select> 
             </div>
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-700 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya senang bekerja sama dengan orang lain untuk mencapai tujuan bersama.</label> 
-                <select name="question17" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+            <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya senang bekerja sama dengan orang lain untuk mencapai tujuan bersama.</label> 
+                <select name="question17" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -183,9 +183,9 @@
                     <option value="5">Sangat setuju</option> 
                 </select> 
             </div> 
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-600 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya terbuka untuk belajar dari orang lain dan mengambil manfaat dari pengalaman mereka.</label> 
-                <select name="question18" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+           <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya terbuka untuk belajar dari orang lain dan mengambil manfaat dari pengalaman mereka.</label> 
+                <select name="question18" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -193,9 +193,9 @@
                     <option value="5">Sangat setuju</option> 
                 </select> 
             </div> 
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-700 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya memiliki visi yang jelas tentang tujuan yang ingin saya capai di masa depan.</label> 
-                <select name="question19" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+            <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya memiliki visi yang jelas tentang tujuan yang ingin saya capai di masa depan.</label> 
+                <select name="question19" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -203,9 +203,9 @@
                     <option value="5">Sangat setuju</option> 
                 </select> 
             </div> 
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-600 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya secara aktif merencanakan langkah-langkah untuk mencapai visi tersebut.</label> 
-                <select name="question20" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+           <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya secara aktif merencanakan langkah-langkah untuk mencapai visi tersebut.</label> 
+                <select name="question20" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -213,9 +213,9 @@
                     <option value="5">Sangat setuju</option> 
                 </select> 
             </div> 
-            <div class="max-w-lg md:max-w-2xl lg:max-w-4xl mx-auto mt-10 p-6 bg-gray-700 rounded-lg shadow-lg"> 
-                <label class="block text-left md:text-center text-2xl text-gray-200">Saya berpikir tentang bagaimana menciptakan dampak jangka panjang melalui usaha saya.</label> 
-                <select name="question21" class="mt-10 group relative px-10 py-4 bg-gray-900 bg-opacity-80 text-[#f1f1f1] rounded-3xl hover:bg-opacity-60 transition font-semibold shadow-md"> 
+            <div class="bg-gray-200 p-4 rounded-lg flex justify-between items-center m-2"> 
+            <label class="text-gray-700 flex text-left">Saya berpikir tentang bagaimana menciptakan dampak jangka panjang melalui usaha saya.</label> 
+                <select name="question21" class="group bg-gray-300 text-gray-700 py-2 px-4 rounded-full "> 
                     <option value="1">Sangat tidak setuju</option> 
                     <option value="2">Tidak setuju</option> 
                     <option value="3">Netral</option> 
@@ -244,9 +244,17 @@
         </form>
     </div>
 
+    <a href="index.html">
+        <button class="cursor-pointer duration-200 hover:scale-125 active:scale-100" title="Go Back">
+            <svg xmlns="http://www.w3.org/2000/svg" width="50px" height="50px" viewBox="0 0 24 24" class="stroke-gray-300">
+                <path stroke-linejoin="round" stroke-linecap="round" stroke-width="1.5" d="M11 6L5 12M5 12L11 18M5 12H19"></path>
+            </svg>
+        </button>
+    </a>
+
     <!-- Modal -->
-    <div id="resultModal" class="sticky bottom-30 bg-gray-800 bg-opacity-0 hidden justify-center items-center">
-        <div class="bg-white p-6 rounded-[30px] shadow-lg max-w-md lg:max-w-xl w-full">
+    <div id="resultModal" class="sticky bottom-10 bg-gray-800 bg-opacity-0 hidden justify-center m-8">
+        <div class="bg-gray-100 backdrop-blur-sm p-6 rounded-[30px] shadow-lg max-w-md lg:max-w-xl w-full">
             <h2 class="text-2xl lg:text-3xl font-bold mb-4 text-center">Hasil Tes Jiwa Entrepreneur</h2>
             <div id="resultImageContainer" class="mb-4">
                 <img id="resultImage" src="" alt="Hasil Tes" class="max-w-xs mx-auto">
@@ -255,7 +263,7 @@
             <button id="closeModal" class="bg-gray-900 text-white px-4 py-2 rounded lg:px-6 lg:py-3">Tutup</button>
         </div>
     </div>
-    
-    <script src="script.js"></script>
+
+<script src="script.js"></script>
 </body>
 </html>
