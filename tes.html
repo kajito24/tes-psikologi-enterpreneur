@@ -226,7 +226,13 @@
             <!-- Tambahkan pertanyaan lain sesuai kebutuhan -->
             <button
               type="submit"
-              class="flex justify-center gap-2 items-center mx-auto shadow-xl text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-gray-900 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-8 py-4 overflow-hidden border-2 rounded-full group"
+              class="flex justify-center z-0 gap-2 items-center mx-auto shadow-xl 
+              text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto 
+              border-gray-50 before:absolute before:w-full before:transition-all 
+              before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 
+              before:rounded-full before:bg-gray-900 hover:text-gray-50 before:-z-10 
+              before:aspect-square before:hover:scale-150 before:hover:duration-700 
+              relative z-10 px-8 py-4 overflow-hidden border-2 rounded-full group"
             >
               Lihat Hasil
               <svg
@@ -253,7 +259,7 @@
     </a>
 
     <!-- Modal -->
-    <div id="resultModal" class="sticky bottom-10 bg-gray-800 bg-opacity-0 hidden justify-center m-8">
+    <div id="resultModal" class="fixed top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2 bottom-auto bg-gray-800 bg-opacity-0 z-50 hidden justify-center">
         <div class="bg-gray-100 backdrop-blur-sm p-6 rounded-[30px] shadow-lg max-w-md lg:max-w-xl w-full">
             <h2 class="text-2xl lg:text-3xl font-bold mb-4 text-center">Hasil Tes Jiwa Entrepreneur</h2>
             <div id="resultImageContainer" class="mb-4">
