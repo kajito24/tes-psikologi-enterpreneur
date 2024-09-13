@@ -1,26 +1,98 @@
 <!DOCTYPE html>
 <html lang="id">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Selamat Datang di Tes Psikologi Entrepreneur</title>
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
-<body class="bg-gray-900 justify-center flex">
-    <div class="max-w-lg text-center mt-10 border-8 m-8 bg-gray-200 p-5 rounded-[40px] shadow-lg">
-        <h1 class="text-3xl lg:text-4xl font-bold mb-4 text-gray-900 mt-10">SELAMAT DATANG!</h1>
-        <h1 class="text-3xl lg:text-4xl font-bold mb-4 text-gray-900 ">DI TEST PSIKOLOGI ENTERPRENEUR</h1>
-        <p class="text-lg lg:text-ms mb-6 text-gray-900 mt-10">KREKI ( KOMUNITAS RELAWAN EMERGENSI KESEHATAN INDONESIA ) bersama INDOHCF ( INDONESIA HEALTHCARE FORUM ) , mengajak Bpk /Ibu / Sdr / Sdri melakukan self assesment , apakah kita mempunyai jiwa entrepreneur  
-Sekaligus memotivasi agar jiwa *entrepreneur*kita meningkat dg berusaha  meraih score tinggi .
-</p>
-        <p class="text-lg lg:text-ms mb-6 text-gray-900 mt-1">Jawab setiap pertanyaan dengan jujur dan hasilnya akan membantu Anda memahami diri Anda lebih baik.</p>
-        <a href="tes.html" class="mt-10 flex justify-center gap-2 items-center 
-        mx-auto shadow-xl text-lg bg-gray-50 backdrop-blur-md lg:font-semibold 
-        isolation-auto border-gray-50 before:absolute before:w-full before:transition-all 
-        before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 
-        before:rounded-full before:bg-gray-900 hover:text-gray-50 before:-z-10 before:aspect-square 
-        before:hover:scale-150 before:hover:duration-700 relative z-10 px-8 py-4 overflow-hidden border-2 
-        rounded-full group">Mulai</a>
+  </head>
+  <body class="bg-gray-900 justify-center flex">
+    <div
+      class="max-w-lg text-center mt-10 border-8 m-8 bg-gray-200 p-5 rounded-[40px] shadow-lg"
+    >
+      <h1 class="text-3xl lg:text-4xl font-bold mb-4 text-gray-900 mt-10">
+        SELAMAT DATANG!
+      </h1>
+      <h1 class="text-3xl lg:text-4xl font-bold mb-4 text-gray-900">
+        DI TEST PSIKOLOGI ENTERPRENEUR
+      </h1>
+      <p class="text-lg lg:text-ms mb-6 text-gray-900 mt-10">
+        KREKI ( KOMUNITAS RELAWAN EMERGENSI KESEHATAN INDONESIA ) bersama
+        INDOHCF ( INDONESIA HEALTHCARE FORUM ) , mengajak Bpk /Ibu / Sdr / Sdri
+        melakukan self assesment , apakah kita mempunyai jiwa entrepreneur
+        Sekaligus memotivasi agar jiwa *entrepreneur*kita meningkat dg berusaha
+        meraih score tinggi .
+      </p>
+      <p class="text-lg lg:text-ms mb-6 text-gray-900 mt-1">
+        Jawab setiap pertanyaan dengan jujur dan hasilnya akan membantu Anda
+        memahami diri Anda lebih baik.
+      </p>
+      <!-- Biodata Form -->
+      <div class="text-left">
+        <p class="mb-4 text-center">
+          Silakan isi data diri Anda sebelum mengisi survey
+        </p>
+        <form action="" class="w-full flex flex-col gap-4" id="biodataForm">
+          <div class="flex flex-col gap-2">
+            <label for="inputFullName">Nama Lengkap</label>
+            <input
+              type="text"
+              name="fullName"
+              id="inputFullName"
+              required
+              class="p-2 min-h-4 rounded-md"
+            />
+          </div>
+          <div class="flex flex-col gap-2">
+            <label for="inputDOB">Tahun Lahir</label>
+            <input
+              type="number"
+              name="DOB"
+              id="inputDOB"
+              min="1945"
+              max="2035"
+              required
+              value="1945"
+              class="p-2 min-h-4 rounded-md"
+            />
+          </div>
+          <button
+            type="submit"
+            class="w-full mt-8 flex justify-center items-center mx-auto shadow-xl text-lg bg-gray-50 backdrop-blur-md lg:font-semibold isolation-auto border-gray-50 before:absolute before:w-full before:transition-all before:duration-700 before:hover:w-full before:-left-full before:hover:left-0 before:rounded-full before:bg-gray-900 hover:text-gray-50 before:-z-10 before:aspect-square before:hover:scale-150 before:hover:duration-700 relative z-10 px-8 py-4 overflow-hidden border-2 rounded-full group"
+          >
+            Mulai
+          </button>
+        </form>
+      </div>
     </div>
-</body>
+
+    <script>
+      // Ambil HTML element form dan input biodata
+      const biodataForm = document.getElementById("biodataForm");
+      const fullNameInput = document.getElementById("inputFullName");
+      const DOBInput = document.getElementById("inputDOB");
+
+      // Tambahkan submit event listener pada form biodata
+      biodataForm.addEventListener("submit", (e) => {
+        // Cegah default behavior form agar page tidak reload
+        e.preventDefault();
+
+        // Buat FormData dari `bioadtaForm`
+        const formData = new FormData(biodataForm);
+
+        // Loop setiap key-value pair dari entri `formData`
+        for (const pair of formData.entries()) {
+          // Buat variable k untuk `formData` key, dan v untuk `formData` value
+          const k = pair[0],
+            v = pair[1];
+
+          // Buat item baru di session storage sesuai dengan key value di atas
+          sessionStorage.setItem(k, v);
+        }
+
+        //   Alihkan halaman ke `/tes.html`
+        location.replace("/tes.html");
+      });
+    </script>
+  </body>
 </html>
