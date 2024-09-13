@@ -4,7 +4,7 @@ import Image from "next/image";
 import { useState, useEffect } from "react";
 import { useRouter } from "next/navigation";
 import ImageLogoKreki from "@/public/logoKreki.png";
-import ImageLogoIndoHCF from "@/public/logoIndoHCF.png";
+import ImageLogoIndoHCF from "@/public/ LogoIndoHCF.png";
 
 export default function Home() {
   const router = useRouter();
