@@ -1,0 +1,15 @@
+{
+  "name": "tes-psikologi-enterpreneur",
+  "version": "1.0.0",
+  "description": "buaat tugas bapak",
+  "main": "script.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@vercel/kv": "^2.0.0"
+  }
+}
