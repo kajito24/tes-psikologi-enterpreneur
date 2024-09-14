@@ -7,14 +7,13 @@ async function dbConnect() {
     return;
   }
 
-  const db = await mongoose.connect(process.env.MONGODB_URI);
+  const db = await mongoose.connect(
+    process.env.NODE_ENV === "development"
+      ? process.env.MONGODB_URI_DEV
+      : process.env.MONGODB_URI_PROD
+  );
 
   connection.isConnected = db.connection.readyState;
-  console.log(connection.isConnected);
-
-  mongoose.connection.on("connected", () =>
-    console.log("Connected to MongoDB")
-  );
 }
 
 export default dbConnect;
