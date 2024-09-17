@@ -10,7 +10,7 @@ async function dbConnect() {
   const db = await mongoose.connect(
     process.env.NODE_ENV === "development"
       ? process.env.MONGODB_URI_DEV
-      : process.env.MONGODB_URI_PROD
+      : process.env.MONGODB_URI
   );
 
   connection.isConnected = db.connection.readyState;
