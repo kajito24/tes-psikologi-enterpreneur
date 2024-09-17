@@ -4,6 +4,8 @@ import Score from "@/models/Score";
 
 dbConnect();
 
+export const revalidate = 0;
+
 export async function GET() {
   const highScores = await Score.find({ score: { $gt: 79 } }).select("-__v");
   const mediumScores = await Score.find({ score: { $gt: 59, $lt: 79 } }).select(
