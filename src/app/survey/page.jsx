@@ -1,7 +1,7 @@
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
 import Survey from "@/components/Survey";
-import SignOut from "@/components/SignOut";
+import SignOut from "@/components/sign-out-button";
 
 export default function SurveyPage() {
   const token = cookies().get("user-token");
