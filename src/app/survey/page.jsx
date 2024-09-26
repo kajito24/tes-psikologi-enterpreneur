@@ -1,6 +1,6 @@
 import { cookies } from "next/headers";
 import { redirect } from "next/navigation";
-import Survey from "@/components/Survey";
+import SurveyContainer from "@/components/survey-container";
 import SignOut from "@/components/sign-out-button";
 
 export default function SurveyPage() {
@@ -17,7 +17,7 @@ export default function SurveyPage() {
         <SignOut />
       </div>
 
-      <Survey />
+      <SurveyContainer />
     </div>
   );
 }
