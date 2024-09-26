@@ -3,10 +3,10 @@
 import { useState } from "react";
 import { signOut } from "@/app/actions";
 import { questions } from "@/questions";
-import ResultModal from "./survey/ResultModal";
-import SurveyButtons from "./survey/SurveyButtons";
-import SurveyAnswers from "./survey/SurveyAnswers";
-import SurveyQuestion from "./survey/SurveyQuestion";
+import ResultModal from "./survey/result-modal";
+import SurveyButtons from "./survey/survey-buttons";
+import SurveyAnswers from "./survey/survey-answers";
+import SurveyQuestion from "./survey/survey-question";
 import { Box, LinearProgress, Typography } from "@mui/material";
 
 const options = [

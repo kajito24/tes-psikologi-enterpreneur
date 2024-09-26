@@ -2,7 +2,7 @@ import { Typography, Container, Grid2 as Grid } from "@mui/material";
 import Image from "next/image";
 import ImageLogoKreki from "@/public/logoKreki.png";
 import ImageLogoIndoHCF from "@/public/LogoIndoHCF.png";
-import BiodataForm from "@/components/BiodataForm";
+import BiodataForm from "@/components/biodata-form";
 
 export default function LoginContainer() {
   return (
