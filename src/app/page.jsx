@@ -36,11 +36,14 @@ export default function Home() {
 
   return (
     <div className="max-w-lg text-center mt-10 border-8 m-8 bg-gray-200 p-5 rounded-[40px] shadow-lg">
-      <h1 className="flex justify-center scale-100 border-spacing-5 mx-auto w-32 h-20"><Image src={ImageLogoKreki} alt="logo Kreki"/><Image src={ImageLogoIndoHCF} alt="logo IndoHCF"/> </h1>
+      <h1 className="flex justify-center scale-100 border-spacing-5 mx-auto w-32 h-20">
+        <Image src={ImageLogoKreki} alt="logo Kreki" />
+        <Image src={ImageLogoIndoHCF} alt="logo IndoHCF" />{" "}
+      </h1>
       <h1 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900 mt-10">
         SELAMAT DATANG!
       </h1>
-      
+
       <h1 className="text-3xl lg:text-4xl font-bold mb-4 text-gray-900 ">
         DI TEST PSIKOLOGI ENTERPRENEUR
       </h1>

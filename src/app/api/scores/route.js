@@ -5,9 +5,9 @@ import Score from "@/models/Score";
 dbConnect();
 
 export async function GET() {
-  const scores = await Score.find().exec();
+  const scores = await Score.find().select("-__v");
 
-  return NextResponse.json({ message: "Connected", scores });
+  return NextResponse.json({ scores });
 }
 
 /**

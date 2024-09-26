@@ -17,10 +17,10 @@ export async function GET() {
   const veryLowScores = await Score.find({ score: { $lt: 39 } }).select("-__v");
 
   const categories = {
-    high: highScores.length,
-    medium: mediumScores.length,
-    low: lowScores.length,
-    veryLow: veryLowScores.length,
+    high: highScores,
+    medium: mediumScores,
+    low: lowScores,
+    veryLow: veryLowScores,
   };
   return NextResponse.json({ categories });
 }

@@ -8,7 +8,6 @@ import ImageSangatRendah from "@/public/sangat-rendah.png";
 import ImageSedang from "@/public/sedang.png";
 import ImageTinggi from "@/public/Tinggi.png";
 
-
 export default function TestPage() {
   const router = useRouter();
   const [fullName, setFullName] = useState(null);
