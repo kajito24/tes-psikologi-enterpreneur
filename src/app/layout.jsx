@@ -13,15 +13,16 @@ const geistMono = localFont({
 });
 
 export const metadata = {
-  title: "Selamat Datang di Tes Psikologi Entrepreneur",
-  description: "Tes Psikologi Entrepeneur by KREKI",
+  title: "Tes Psikologi Entrepeneur | KREKI",
+  description:
+    "Temukan kepribadian dan potensi entrepreneur Anda dengan tes psikologi komprehensif kami. Dapatkan wawasan tentang kekuatan, kelemahan, dan mindset entrepreneur Anda dengan Tes Psikologi Entrepeneur.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-gray-900 justify-center flex`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-background justify-center flex`}
       >
         {children}
       </body>
